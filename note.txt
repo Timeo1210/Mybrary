@@ -1,2 +1,13 @@
 le dossier routes fais refference au controller
 MVC -> Controller
+
+quand on utilise require c'est comme si on copier coller
+le programme donc les path vienne du script parent
+
+app.set('views', __dirname + '/views')
+signifie que on fais croire que ce qu'il y a dans views
+et dans la racine donc par example si on demande de render
+index.ejs il nous suffit d'ecrire res.render('index.ejs')
+
+
+
