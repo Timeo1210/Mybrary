@@ -22,12 +22,11 @@ app.use(bodyParser.urlencoded({ limit: '10mb', extended: false}))
 const mongoose = require('mongoose');
 mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
-    dbName: "Cluster0"
 })
 const db = mongoose.connection;
 // Check if a error appear when connecting to db database
 db.on('error', error => console.error(error));
-db.once('open', () => console.error('Connected to Mongoose'))
+db.once('open', () => console.log('Connected to Mongoose'))
 
 app.use('/', indexRouter)
 app.use('/authors', authorRouter)
