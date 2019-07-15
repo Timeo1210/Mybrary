@@ -1,0 +1,2 @@
+le dossier routes fais refference au controller
+MVC -> Controller
