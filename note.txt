@@ -1,8 +1,12 @@
 le dossier routes fais refference au controller
 MVC -> Controller
 
+
+
 quand on utilise require c'est comme si on copier coller
 le programme donc les path vienne du script parent
+
+
 
 app.set('views', __dirname + '/views')
 signifie que on fais croire que ce qu'il y a dans views
@@ -10,9 +14,26 @@ et dans la racine donc par example si on demande de render
 index.ejs il nous suffit d'ecrire res.render('index.ejs')
 
 
+
 reparer CIBOX_500G
 https://www.maketecheasier.com/repair-mac-hard-disk-with-fsck/
 
 
+
+les routes sont faite de bas en haut ex:
+on veut qu'on arrive sur la page new avec
+/new = path
+
+//server: new peut etre considerer comme un id donc path => page id
+router.get('/:id') page id
+router.get('/new) => page new
+
+alors que
+//dans ce cas la path ne montre pas la propriete
+mais si path = /4738292 alors
+//server: path n'est pas egal a /new donc path !=> page new
+router.get('/new) => page new
+//server: 4738292 peut etre considerere comme un id donc path => page id
+router.get('/:id') page id
 
 
