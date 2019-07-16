@@ -10,4 +10,9 @@ et dans la racine donc par example si on demande de render
 index.ejs il nous suffit d'ecrire res.render('index.ejs')
 
 
+reparer CIBOX_500G
+https://www.maketecheasier.com/repair-mac-hard-disk-with-fsck/
+
+
+
 
