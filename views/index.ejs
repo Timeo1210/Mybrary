@@ -1,1 +1,9 @@
-Middle
+<link rel="stylesheet" href="/stylesheets/index.css">
+<h1 class="main-title reveal-translate-X">Recently Added</h1>
+<div class="wrapper reveal-translate-Y">
+    <div class="image-box">
+        <% books.forEach(book => { %>
+            <a href="/books/<%= book.id %>"><img src="<%= book.coverImagePath %>"><figcaption class="caption"><span><%= book.title %></span></figcaption></a>
+        <% }) %>
+    </div>
+</div>

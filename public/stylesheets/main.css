@@ -1,0 +1,35 @@
+body {
+    font-family: 'Rubik';
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background: #F5F5F5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* reaveal and reveal-visible id for scroll display */
+/* reveal-visible must be last */
+[class*="reveal-"] {
+    opacity: 0;
+}
+
+.reveal-translate-X {
+    transform: translateX(-30px);
+}
+
+.reveal-translate-Y {
+    transform: translateY(-30px);
+}
+
+.reveal_visible {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: 1s cubic-bezier(0.5, -1, 0.5, 2);
+}

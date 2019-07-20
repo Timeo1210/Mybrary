@@ -1,0 +1,40 @@
+.main-title {
+    text-align: center;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.image-box {
+    min-width: 600px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.image-box a {
+    margin: 15px 25px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.image-box a:hover img {
+    height: 375px;
+    width: 250px;
+}
+
+.image-box a img {
+    /*
+    min-height: 150px;
+    min-width: 100px;
+    */
+    height: 300px;
+    width: 200px;
+}
+
+.caption {
+    display: block;
+}

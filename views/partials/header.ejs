@@ -1,9 +1,25 @@
-<header>
+<link rel="stylesheet" href="/stylesheets/partials/header.css">
+<header class="header">
     <nav>
-        <a href="/">Mybrary</a>
-        <ul>
-            <li><a href="/authors">Authors</a></li>
-            <li><a href="/authors/new">Add Authors</a></li>
-        </ul>
+        <div class="header-main-title reveal-translate-X">
+            <a href="/">Mybrary</a>
+        </div>
+        <div class="header-div-ul">
+            <a href="/" class="reveal-translate-X">Home</a>
+            <div class="reveal-translate-X dropdown">
+                <a href="#">Authors</a>
+                <div class="dropdown-content">
+                    <a href="/authors">View Authors</a>
+                    <a href="/authors/new">Add Author</a>
+                </div>
+            </div>
+            <div class="reveal-translate-X dropdown">
+                <a href="#">Books</a>
+                <div class="dropdown-content">
+                    <a href="/books">View Books</a>
+                    <a href="/books/new">Add Book</a>
+                </div>
+            </div>
+        </div>
     </nav>
 </header>
